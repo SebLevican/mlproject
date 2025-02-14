@@ -5,7 +5,7 @@ seaborn
 matplotlib
 scikit-learn
 dill
-
+Flask
 xgboost
 
 -e .
