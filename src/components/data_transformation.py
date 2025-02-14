@@ -13,9 +13,16 @@ from src.logger import logging
 from src.utils import save_object
 import os
 
+from src.components.model_trainer import ModelTrainerConfig
+from src.components.model_trainer import ModelTrainer
+
+
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+print(ROOT_DIR)
+#logs_path = os.path.join(ROOT_DIR, 'artifacts')
 
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artifacts','preprocessor.pkl')
+    preprocessor_obj_file_path = os.path.join(ROOT_DIR, 'artifacts', 'preprocessor.pkl')
 
 class DataTransformation:
     def __init__(self):
